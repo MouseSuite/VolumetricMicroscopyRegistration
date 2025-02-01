@@ -28,7 +28,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install sphinx
-        run: pip install sphinx sphinx_rtd_theme sphinx-argparse sphinx-copybutton
+        run: pip install sphinx sphinx_rtd_theme sphinx-argparse sphinx-copybutton nbsphinx
       - name: build site
         working-directory: docs
         run: make html
