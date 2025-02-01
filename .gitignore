@@ -4,3 +4,4 @@
 *.npz
 *.nii
 *.nii.gz
+docs/build
