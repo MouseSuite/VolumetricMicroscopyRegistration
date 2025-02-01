@@ -29,6 +29,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install sphinx
         run: pip install sphinx sphinx_rtd_theme sphinx-argparse sphinx-copybutton nbsphinx
+      - uses: nikeee/setup-pandoc@v1
       - name: build site
         working-directory: docs
         run: make html
