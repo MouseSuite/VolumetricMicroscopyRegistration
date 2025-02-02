@@ -37,8 +37,7 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinx.ext.imgmath',
     'sphinx.ext.todo',
-    'nbsphinx',
-    'IPython.sphinxext.ipython_console_highlighting'
+    'nbsphinx'
 ]
 
 
