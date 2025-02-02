@@ -6,3 +6,6 @@
 *.nii.gz
 docs/build
 *.py[cod]
+docs/source/manual_point_align.rst
+docs/source/point_mapper.rst
+docs/build/*/*
