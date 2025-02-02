@@ -1,0 +1,11 @@
+{%- extends "!breadcrumbs.html" %}
+
+    {%- block breadcrumbs %}
+    <li><a href=/  class="icon icon-home" aria-label="Home"> MouseSuite</a></li>
+      <li class="breadcrumb-item"><a href="{{ pathto(master_doc) }}" > {{project}}</a></li>
+        {%- for doc in parents %}
+          <li class="breadcrumb-item"><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
+        {%- endfor %}
+      <li class="breadcrumb-item active">{{ title }}</li>
+    {%- endblock %}
+
