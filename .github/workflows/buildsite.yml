@@ -30,6 +30,10 @@ jobs:
       - name: Install sphinx
         run: pip install sphinx sphinx_rtd_theme sphinx-argparse sphinx-copybutton nbsphinx
       - uses: nikeee/setup-pandoc@v1
+      - uses: teatimeguest/setup-texlive-action@v3
+        with:
+          packages: |
+            scheme-basic
       - name: build site
         working-directory: docs
         run: make html
