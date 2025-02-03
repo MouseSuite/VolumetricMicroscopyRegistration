@@ -34,6 +34,8 @@ jobs:
         with:
           packages: |
             scheme-basic
+            anyfontsize
+            bm
       - name: build site
         working-directory: docs
         run: make html
